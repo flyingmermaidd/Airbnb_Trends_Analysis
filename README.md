@@ -1,14 +1,14 @@
 # Toronto Airbnb Market Analysis & Trends Dashboard
 
-This repository showcases a full-stack data analytics pipeline that scrapes, analyzes, and visualizes Airbnb listing data for Toronto. It uncovers actionable insights into pricing, occupancy, amenities, and host behavior—culminating in an interactive Power BI dashboard.
+This repository showcases a full-stack data analytics pipeline that scrapes, analyzes, and visualizes Airbnb listing data for Toronto. It uncovers actionable insights into pricing, occupancy, amenities, and host behavior culminating in an interactive Power BI dashboard.
 
 ---
 
 ## Project Overview
 
-I developed a proof-of-concept scraper using BeautifulSoup to simulate extraction from Airbnb listings. Due to scraping limitations and legal constraints, I validated my scraping logic using saved HTML pages.
+This project presents a proof-of-concept web scraper built using BeautifulSoup to simulate the extraction of data from Airbnb listings. Due to legal and ethical constraints around large-scale web scraping on the Airbnb platform, the scraping logic was validated using pre-saved HTML pages.
 
-For large-scale analysis, I used publicly available data from [Inside Airbnb](http://insideairbnb.com/get-the-data.html)—which closely mirrors what I would have extracted at scale. This allowed me to build and demonstrate the full data pipeline from extraction to insight generation.
+For the purposes of full-scale analysis, the project utilizes publicly available datasets from [Inside Airbnb](http://insideairbnb.com/get-the-data.html), which closely resemble the data that would be obtained through live scraping. This approach enables the demonstration of a complete data pipeline from data extraction and preprocessing to advanced analytics and business intelligence visualization.
 
 The project answers critical market questions:
 
@@ -55,7 +55,7 @@ Key insights revealed from this project include:
 
 - **Superhost Formula**: Superhosts tend to offer higher review scores rather than charging more. They achieve better occupancy through pricing strategies and listing quality.
 - **Amenity Value**: Features like Pools and Hot Tubs correlate with premium pricing, whereas WiFi and Kitchen are baseline expectations.
-- **Neighborhood Impact**: Listings near downtown and transit-heavy areas perform significantly better—frequently using keywords like “subway”, “walk”, and “downtown”.
+- **Neighborhood Impact**: Listings near downtown and transit-heavy areas perform significantly better - frequently using keywords like “subway”, “walk”, and “downtown”.
 - **Clustering Reveals Zones**: Downtown clusters exhibit high demand and density, while outer neighborhoods offer better price-to-occupancy ratios.
 
 ---
@@ -79,12 +79,13 @@ Key insights revealed from this project include:
 airbnb_scraper/                
 sample_airbnb_page_files/       
 sample_airbnb_page.html        
-airbnb_data_analysis.ipynb     
+airbnb_data_analysis.ipynb
+airbnb_data_analysis.pdf     
 parse_html_simulation.py       
 Airbnb Scraper Dashboard.pbix  
 requirements.txt               
 README.md                     
-.gitignore                    
+.gitignore                   
 scrapy.cfg               
 ```
 
@@ -125,10 +126,6 @@ The file `Airbnb Scraper Dashboard.pbix` is designed for interactive exploration
 
 - Open the `.pbix` file with Power BI Desktop.
 Open the Power BI file in Microsoft Power BI Desktop:
-
-```bash
-Airbnb Scraper Dashboard.pbix
-```
 
 - Explore the following dashboard pages:
   - Superhost pricing and occupancy comparisons
