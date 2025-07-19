@@ -20,3 +20,14 @@ Thumbs.db
 
 # Power BI autosaves
 *.pbix.autosave
+
+# HTML or simulated pages containing real data
+sample_airbnb_page.html
+sample_airbnb_page_files/
+*.js.download
+
+# GitHub and CI artifacts
+*.token
+*.secret
+*.pem
+*.key
