@@ -1,14 +1,13 @@
 # Byte-compiled / cache
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
 # Virtual environment
 venv/
-.env/
-
-# Jupyter Notebook hidden files
-.ipynb_checkpoints
+.env
 
 # Data files
 *.csv
@@ -26,8 +25,12 @@ sample_airbnb_page.html
 sample_airbnb_page_files/
 *.js.download
 
-# GitHub and CI artifacts
+# GitHub and CI artifacts / secrets
 *.token
 *.secret
 *.pem
 *.key
+
+# IDEs and editors
+.vscode/
+.idea/
